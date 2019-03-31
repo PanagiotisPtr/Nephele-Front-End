@@ -6,7 +6,13 @@ class App extends Component {
     return (
       <div className="app">
         <div className="navbar" style={{background: 'red'}}>nav</div>
-        <div className="main" style={{background: 'green'}}>content</div>
+        <div className="main" style={{background: 'grey'}}>
+          <div className="top-bar" style={{background: 'green'}}>search</div>
+          <div className="row-container">
+            <div className="content" style={{background: 'blue'}}>content</div>
+            <div className="side-info" style={{background: 'magenta'}}>nav</div>
+          </div>
+        </div>
       </div>
     );
   }

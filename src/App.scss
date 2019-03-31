@@ -15,6 +15,19 @@
     flex: 7;
 }
 
+.top-bar {
+    height: 8vh;
+}
+
+.content {
+    flex: 4;
+}
+
+.side-info {
+    height: 92vh;
+    flex: 1;
+}
+
 .app {
     @extend .row-container;
     height: 100vh;
