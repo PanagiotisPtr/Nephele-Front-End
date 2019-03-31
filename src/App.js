@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      <div>Hello</div>
+      <div className="app">
+        <div className="navbar" style={{background: 'red'}}>nav</div>
+        <div className="main" style={{background: 'green'}}>content</div>
+      </div>
     );
   }
 }

@@ -1,0 +1,21 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+        flex: 1;
+    }
+}
+
+.navbar {
+    flex: 1;
+}
+
+.main {
+    flex: 7;
+}
+
+.app {
+    @extend .row-container;
+    height: 100vh;
+}
