@@ -7,6 +7,12 @@
     }
 }
 
+// todo https://css-tricks.com/webkit-html5-search-inputs/
+.search-box {
+    height: 2vh;
+    align-self: center;
+}
+
 .navbar {
     flex: 1;
 }
@@ -16,6 +22,8 @@
 }
 
 .top-bar {
+    display: flex;
+    flex-direction: column;
     height: 8vh;
 }
 
