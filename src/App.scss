@@ -7,6 +7,17 @@
     }
 }
 
+.col-container {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+        flex: 1;
+    }
+}
+
+/*      ----  TOPBAR  ----      */
+
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
@@ -21,7 +32,7 @@ input[type=search]::-webkit-search-results-decoration {
 
     background: white;
     height: 8vh;
-    border-bottom: 0.1vh solid gray;
+    border-bottom: 0.1vh solid rgb(228, 228, 228);
 }
 
 .top-bar .search-bar {
@@ -30,12 +41,12 @@ input[type=search]::-webkit-search-results-decoration {
 
 .top-bar .search-bar input[type=search] {
     height: 4vh;
-    width: 35vh;
+    width: 40vh;
     margin-top: 2vh;
     padding-right: 3vh;
 
     border-radius: 2vh;
-    border: 0.1vh solid lightgray;
+    border: 0.1vh solid rgb(212, 212, 212);
 
     font-size: 1.8vh;
     text-indent: 1vh;
@@ -46,9 +57,9 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .top-bar .search-bar i {
-    color: #a3a3a3;
+    color: rgb(150, 150, 150);
     position: absolute;
-    margin-left: 32vh;
+    margin-left: 37vh;
     margin-top: 3.25vh;
     font-size: 1.5vh;
     z-index: 2;
@@ -63,29 +74,199 @@ input[type=search]::-webkit-search-results-decoration {
     padding-left: 2.5vh;
     padding-top: 2vh;
     font-size: 3vh;
-    color: #a3a3a3;
+    color: rgb(150, 150, 150);
 }
 
 .top-bar .side-icons .fa-plus-circle {
     color: #2962ff;
 }
 
+/*      ----  NAVBAR  ----      */
+
 .navbar {
     flex: 1;
+    background: rgb(248,248,248);
 }
+
+.navbar .logo {
+    margin-top: 2vh;
+    align-self: center;
+}
+
+.navbar .logo img {
+    height: 4vh;
+}
+
+.navbar .profile {
+    margin-top: 4vh;
+}
+
+.navbar .profile img {
+    border-radius: 100%;
+    height: 5.5vh;
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbar .profile .username {
+    margin-top: 1.5vh;
+    font-size: 1.75vh;
+    align-self: center;
+}
+
+.navbar .profile .location {
+    margin-top: 0.4vh;
+    color: rgb(150, 150, 150);
+    font-size: 1.5vh;
+    align-self: center;
+}
+
+.navbar .stats {
+    margin-top: 3vh;
+}
+
+.navbar .stats .thic {
+    font-size: 1.75vh;
+    font-weight: bold;
+}
+
+.navbar .stats .fade {
+    font-weight: 500;
+    font-size: 1.25vh;
+    color: rgb(150, 150, 150);
+}
+
+.navbar .separator {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 20vh;
+    height: 0.1vh;
+    align-self: center;
+    background: rgb(228, 228, 228);
+}
+
+.navbar .menu .option {
+    cursor: pointer;
+}
+
+.navbar .menu .option:hover {
+    background: rgb(225,225,225);
+}
+
+.navbar .menu .option .status {
+    width: 0.5vh;
+    height: 4vh;
+    border-radius: 20%;
+    align-self: center;
+    background: #2962ff;
+}
+
+.navbar .menu .option i {
+    margin-left: 3vh;
+    font-size: 1.75vh;
+    align-self: center;
+    color: rgb(150, 150, 150);
+}
+
+.navbar .menu .option .name {
+    padding-left: 1.5vh;
+    font-size: 1.75vh;
+    align-self: center;
+}
+
+.navbar .menu .option .notification {
+    padding-left: 1vh;
+    color: #2962ff;
+    align-self: center;
+}
+
+.navbar .menu .option .notification .num {
+    font-weight: 500;
+}
+
+.navbar .logout {
+    font-weight: 500;
+    padding-left: 3vh;
+    padding-bottom: 4vh;
+    cursor: pointer;
+}
+
+.navbar .copyright {
+    color: rgb(150, 150, 150);
+    align-self: center;
+}
+
+/*      ----  MAIN  ----      */
 
 .main {
     flex: 7;
 }
 
+/*      ----  CONTENT  ----      */
+
 .content {
     flex: 4;
 }
 
+.content .placeholder-text {
+    font-size: 12vh;
+    margin-top: 35vh;
+    margin-left: 50vh;
+}
+
+/*      ----  SIDE-INFO  ----      */
+
 .side-info {
     height: 92vh;
     flex: 1;
+    background: white;
+    border-left: 0.1vh solid rgb(228, 228, 228);
 }
+
+.side-info .title {
+    margin-top: 4vh;
+    margin-left: 4vh;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.side-info .title .extra {
+    margin-top: 4vh;
+    margin-left: 2vh;
+    font-size: 1.5vh;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.side-info .trending-video .video {
+    position: relative;
+    width: 26.5vh;
+    margin-left: 4vh;
+    margin-top: 2vh;
+}
+
+.trending-video .creator-name {
+    font-size: 1.5vh;
+    font-weight: 500;
+    margin-left: 4vh;
+    margin-top: 1vh;
+    color: rgb(150, 150, 150);
+}
+
+.trending-video .video-title {
+    margin-left: 4vh;
+    margin-top: 2vh;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.trending-video .video-description {
+    margin-left: 4vh;
+    margin-top: 0.5vh;
+    color: rgb(150, 150, 150);
+}
+
+/*      ----  APP  ----      */
 
 .app {
     @extend .row-container;
