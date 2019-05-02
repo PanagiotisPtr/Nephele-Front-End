@@ -223,8 +223,8 @@ class App extends Component {
                   </div>
                 </div>
                 
-                <div style={{flex: 9, background: 'red'}}>
-                  
+                <div style={{flex: 9, background: 'white'}}>
+                    -- VIDEO FEED GOES HERE --
                 </div>
               
               </div>
