@@ -215,6 +215,27 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 /* --> FEATURED   */
+
+/* --> INFO      */
+.weekly-featured {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.featured-announcement-title {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.featured-announcement-description {
+    color: rgb(150, 150, 150);
+}
+
+.featured-carousel .thumbnail {
+    width: 15vh;
+}
+
+/* --> VIDEO      */
 .featured-video {
     padding-left: 6vh;
 }

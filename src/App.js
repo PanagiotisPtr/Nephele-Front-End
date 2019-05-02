@@ -139,8 +139,67 @@ class App extends Component {
                 <div style={{flex: 8, background: 'white'}}>
                   <div className="row-container" style={{background: 'black', height: '100%'}}>
                     <div className="col-container" style={{flex: 3}}>
-                      <div style={{flex: 1, background: 'orange'}}>Text</div>
-                      <div style={{flex: 1, background: 'pink'}}>Video</div>
+
+                      <div style={{flex: 4, background: 'white'}}>
+                        <div className="col-container" style={{padding: '4vh'}}>
+                          <div className="weekly-featured">
+                            Weekly Featured
+                          </div>
+                          <div className="featured-announcement-title" style={{paddingTop: '2vh'}}>
+                            Summer is here!
+                          </div>
+                          <div className="featured-announcement-description" style={{paddingTop: '2vh'}}>
+                            Spring is over, summer is here! Kick back, relax and watch your favorite creators!
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div style={{flex: 3, background: 'white'}}>
+                        <div className="row-container featured-carousel" style={{paddingLeft: '4vh'}}>
+
+                          <div className="col-container" style={{paddingRight: '2vh'}}>
+                            <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                            <div className="video-creator-name">Creator</div>
+                            <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                            <div className="row-container" style={{paddingTop: '1vh'}}>
+                              <div className="video-stats item">VIEWS</div>
+                              <div className="video-stats item">6DS AGO</div>
+                            </div>
+                          </div>
+
+                          <div className="col-container" style={{paddingRight: '2vh'}}>
+                            <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                            <div className="video-creator-name">Creator</div>
+                            <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                            <div className="row-container" style={{paddingTop: '1vh'}}>
+                              <div className="video-stats item">VIEWS</div>
+                              <div className="video-stats item">6DS AGO</div>
+                            </div>
+                          </div>
+
+                          <div className="col-container" style={{paddingRight: '2vh'}}>
+                            <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                            <div className="video-creator-name">Creator</div>
+                            <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                            <div className="row-container" style={{paddingTop: '1vh'}}>
+                              <div className="video-stats item">VIEWS</div>
+                              <div className="video-stats item">6DS AGO</div>
+                            </div>
+                          </div>
+
+                          <div className="col-container" style={{paddingRight: '2vh'}}>
+                            <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                            <div className="video-creator-name">Creator</div>
+                            <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                            <div className="row-container" style={{paddingTop: '1vh'}}>
+                              <div className="video-stats item">VIEWS</div>
+                              <div className="video-stats item">6DS AGO</div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    
                     </div>
                     
                     <div className="col-container featured-video" style={{flex: 2, background: 'white'}}>
