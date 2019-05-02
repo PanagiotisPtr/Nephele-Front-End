@@ -39,19 +39,19 @@ class App extends Component {
               
               <div className="option row-container">
                 <div className="status"></div>
-                <i class="fas fa-video"></i>
+                <i className="fas fa-video"></i>
                 <div className="name">Videos</div>
               </div>
 
               <div className="option row-container">
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-film"></i>
+                <i className="fas fa-film"></i>
                 <div className="name">Movies & Shows</div>
               </div>
 
               <div className="option row-container" style={{marginBottom: "0"}}>
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-donate"></i>
+                <i className="fas fa-donate"></i>
                 <div className="name">Premium</div>
               </div>
 
@@ -62,26 +62,26 @@ class App extends Component {
             <div className="menu col-container">
               <div className="option row-container">
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-bookmark"></i>
+                <i className="fas fa-bookmark"></i>
                 <div className="name">Subscriptions</div>
                 <div className="notification"><span className="num">4</span> new</div>
               </div>
 
               <div className="option row-container">
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-list"></i>
+                <i className="fas fa-list"></i>
                 <div className="name">Library</div>
               </div>
 
               <div className="option row-container">
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="far fa-thumbs-up"></i>
+                <i className="far fa-thumbs-up"></i>
                 <div className="name">Liked Videos</div>
               </div>
 
               <div className="option row-container" style={{marginBottom: "0"}}>
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-clock"></i>
+                <i className="fas fa-clock"></i>
                 <div className="name">Watch Later</div>
               </div>
             </div>
@@ -91,14 +91,14 @@ class App extends Component {
             <div className="menu col-container">
               <div className="option row-container">
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-sliders-h"></i>
+                <i className="fas fa-sliders-h"></i>
                 <div className="name">Settings</div>
                 <div className="notification"><span className="num"></span></div>
               </div>
 
               <div className="option row-container" style={{marginBottom: "0"}}>
                 <div className="status" style={{background: "rgb(248,248,248)"}}></div>
-                <i class="fas fa-user"></i>
+                <i className="fas fa-user"></i>
                 <div className="name">Help & Report</div>
               </div>
             </div>
@@ -118,16 +118,16 @@ class App extends Component {
             <div style={{width: '65vh'}}></div>
 
             <div className="search-bar">
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
               <input type="search" placeholder="Search"></input>
             </div>
             
             <div style={{width: '45vh'}}></div>
 
             <div className="side-icons">
-              <i class="fas fa-plus-circle"></i>
-              <i class="fas fa-bell"></i>
-              <i class="fas fa-user-circle"></i>
+              <i className="fas fa-plus-circle"></i>
+              <i className="fas fa-bell"></i>
+              <i className="fas fa-user-circle"></i>
             </div>
 
           </div>
