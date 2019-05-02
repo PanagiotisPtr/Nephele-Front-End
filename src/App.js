@@ -133,7 +133,43 @@ class App extends Component {
           </div>
           
           <div className="row-container">
-            <div className="content" style={{background: 'white'}}><div className="placeholder-text">content</div></div>
+            <div className="content" style={{background: 'white'}}>
+              <div className="col-container" style={{height: '100%'}}>
+
+                <div style={{flex: 8, background: 'white'}}>
+                  <div className="row-container" style={{background: 'black', height: '100%'}}>
+                    <div className="col-container" style={{flex: 3}}>
+                      <div style={{flex: 1, background: 'orange'}}>Text</div>
+                      <div style={{flex: 1, background: 'pink'}}>Video</div>
+                    </div>
+                    
+                    <div className="col-container featured-video" style={{flex: 2, background: 'white'}}>
+                      <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                      <div className="col-container" style={{paddingTop: '1vh'}}>
+                        <div className="video-creator-name">Panagiotis Petridis</div>
+                        <div className="video-title" style={{paddingTop: '1vh'}}>Render Layers in Blender</div>
+                        <div className="video-description" style={{paddingTop: '1vh'}}>
+                          Hi there! So in this video I will be
+                          showing you guys how cool 
+                          render layers are and how you can use them.
+                        </div>
+                        <div className="row-container" style={{paddingTop: '1vh'}}>
+                          <div className="video-stats" style={{paddingRight: '6vh'}}>VIEWS 100K</div>
+                          <div className="video-stats" style={{paddingRight: '6vh'}}>LIKES 101K</div>
+                          <div className="video-stats" style={{paddingRight: '6vh'}}>1 WEEK AGO</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+                <div style={{flex: 9, background: 'red'}}>
+                  
+                </div>
+              
+              </div>
+            </div>
 
             <div className="side-info col-container">
               <div className="title">

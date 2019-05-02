@@ -214,6 +214,36 @@ input[type=search]::-webkit-search-results-decoration {
     margin-left: 50vh;
 }
 
+/* --> FEATURED   */
+.featured-video {
+    padding-left: 6vh;
+}
+
+.featured-video .thumbnail {
+    width: 45vh;
+    margin-top: 2vh;
+}
+
+.video-creator-name {
+    font-size: 1.5vh;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.video-description {
+    color: rgb(150, 150, 150);
+}
+
+.video-stats {
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
 /*      ----  SIDE-INFO  ----      */
 
 .side-info {
