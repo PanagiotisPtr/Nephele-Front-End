@@ -91,6 +91,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .content {
     flex: 4;
+    overflow-x: hidden;
     overflow-y: scroll;
     overflow-y: -moz-scrollbars-none;
     -ms-overflow-style: none;
