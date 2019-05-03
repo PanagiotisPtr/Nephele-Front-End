@@ -3,7 +3,6 @@ import './App.scss';
 import logo from './images/logo.png';
 import profile_pic from './images/profile_pic.png';
 import trending_thumbnail from './images/trending_thumbnail.jpg';
-import trending_creator from './images/trending_creator.png';
 
 class App extends Component {
   render() {
@@ -222,9 +221,69 @@ class App extends Component {
 
                   </div>
                 </div>
+
+                <div className="separator" style={{marginTop: '4vh', width: '130vh', alignSelf: 'center'}}></div>
                 
                 <div style={{flex: 9, background: 'white'}}>
-                    -- VIDEO FEED GOES HERE --
+                    <div class="category-title" style={{marginLeft: '4vh', marginTop: '4vh'}}>Recommended</div>
+                    <div className="row-container" style={{margin: '0vh 0vh 4vh 4vh', flexWrap: 'wrap'}}>
+
+                      <div className="col-container feed" style={{marginTop: '4vh', paddingRight: '2vh'}}>
+                        <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                        <div className="video-creator-name">Creator</div>
+                        <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                        <div className="row-container" style={{paddingTop: '1.5vh'}}>
+                          <div className="video-stats item">VIEWS</div>
+                          <div className="video-stats item">6DS AGO</div>
+                          <span className="item"/>
+                        </div>
+                      </div>
+
+                      <div className="col-container feed" style={{marginTop: '4vh', paddingRight: '2vh'}}>
+                        <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                        <div className="video-creator-name">Creator</div>
+                        <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                        <div className="row-container" style={{paddingTop: '1.5vh'}}>
+                          <div className="video-stats item">VIEWS</div>
+                          <div className="video-stats item">6DS AGO</div>
+                          <span className="item"/>
+                        </div>
+                      </div>
+
+                      <div className="col-container feed" style={{marginTop: '4vh', paddingRight: '2vh'}}>
+                        <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                        <div className="video-creator-name">Creator</div>
+                        <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                        <div className="row-container" style={{paddingTop: '1.5vh'}}>
+                          <div className="video-stats item">VIEWS</div>
+                          <div className="video-stats item">6DS AGO</div>
+                          <span className="item"/>
+                        </div>
+                      </div>
+
+                      <div className="col-container feed" style={{marginTop: '4vh', paddingRight: '2vh'}}>
+                        <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                        <div className="video-creator-name">Creator</div>
+                        <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                        <div className="row-container" style={{paddingTop: '1.5vh'}}>
+                          <div className="video-stats item">VIEWS</div>
+                          <div className="video-stats item">6DS AGO</div>
+                          <span className="item"/>
+                        </div>
+                      </div>
+
+                      <div className="col-container feed" style={{marginTop: '4vh', paddingRight: '2vh'}}>
+                        <img className="thumbnail" src={trending_thumbnail} alt="Title"/>
+                        <div className="video-creator-name">Creator</div>
+                        <div className="video-title" style={{paddingTop: '1vh', fontSize: '1.6vh'}}>Incredible Title</div>
+                        <div className="row-container" style={{paddingTop: '1.5vh'}}>
+                          <div className="video-stats item">VIEWS</div>
+                          <div className="video-stats item">6DS AGO</div>
+                          <span className="item"/>
+                        </div>
+                      </div>
+
+                    </div>
                 </div>
               
               </div>

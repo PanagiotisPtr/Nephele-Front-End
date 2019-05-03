@@ -262,7 +262,30 @@ input[type=search]::-webkit-search-results-decoration {
 
 .video-stats {
     font-weight: 500;
+    font-size: 1.2vh;
     color: rgb(150, 150, 150);
+}
+
+.separator {
+    height: 0.1vh;
+    background: rgb(228, 228, 228);
+}
+
+/*      ----  CONTENT  ----      */
+
+.feed .thumbnail {
+    width: 30.5vh;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.category-title {
+    font-size: 2vh;
+    font-weight: bold;
 }
 
 /*      ----  SIDE-INFO  ----      */
