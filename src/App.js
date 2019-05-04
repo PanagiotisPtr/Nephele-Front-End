@@ -6,6 +6,7 @@ import SideNav from './Components/SideNav';
 
 // images
 import profile_pic from './images/profile_pic.png';
+import TopBar from './Components/TopBar';
 
 class App extends Component {
   render() {
@@ -37,25 +38,10 @@ class App extends Component {
         />
 
         <div className='main' style={{background: 'grey'}}>
-          
-          <div className='top-bar'>
-
-            <div style={{width: '65vh'}}></div>
-
-            <div className='search-bar'>
-              <i className='fas fa-search'></i>
-              <input type='search' placeholder='Search'></input>
-            </div>
-            
-            <div style={{width: '45vh'}}></div>
-
-            <div className='side-icons'>
-              <i className='fas fa-plus-circle'></i>
-              <i className='fas fa-bell'></i>
-              <i className='fas fa-user-circle'></i>
-            </div>
-
-          </div>
+          <TopBar
+            icons = {['fa-plus-circle', 'fa-bell', 'fa-user-circle']}
+            active = {0}
+          />
           
           <div className='row-container'>
             <div className='content' style={{background: 'white'}}>

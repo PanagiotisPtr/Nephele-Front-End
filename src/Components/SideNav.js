@@ -44,37 +44,35 @@ const MenuItem = ({icon, name, notification, selected}) =>
 const SideNav = props =>
   <aside className='navbar col-container'>
               
-  {/* Nephele Logo */}
-  <img className='logo' src={logo} alt='Nephele Logo'/>
+    {/* Nephele Logo */}
+    <img className='logo' src={logo} alt='Nephele Logo'/>
 
-  {/* User Infomation */}
-  <UserStats
-    username={props.username}
-    location={props.location}
-    videos={props.videos}
-    subscribers={props.subscribers}
-    profilePicture={props.profilePicture}
-  />
+    {/* User Infomation */}
+    <UserStats
+      username={props.username}
+      location={props.location}
+      videos={props.videos}
+      subscribers={props.subscribers}
+      profilePicture={props.profilePicture}
+    />
 
-  {/* Menu */}
-  {props.options.map(menu => 
-    <div className='menu col-container'>
-        <Separator width='80%' margin='5%'/>
-        {menu.map(item =>
-          <MenuItem
-          icon={item.icon}
-          name={item.name}
-          notification={item.notification}
-          selected={item.selected}
-          />
-        )}
-    </div>
-  )}
+    {/* Menu */}
+    {props.options.map(menu => 
+      <div className='menu col-container'>
+          <Separator width='80%' margin='5%'/>
+          {menu.map(item =>
+            <MenuItem
+            icon={item.icon}
+            name={item.name}
+            notification={item.notification}
+            selected={item.selected}
+            />
+          )}
+      </div>
+    )}
 
-  <div style={{height: '22.5%'}}></div>
-
-  <div className='logout'>Logout</div>
-  <div className='copyright'>@2019 Panagiotis Petridis</div>
+    {/* Copyright */}
+    <div className='copyright'>@2019 Panagiotis Petridis</div>
 
   </aside>;
 
