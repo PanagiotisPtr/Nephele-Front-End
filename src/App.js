@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import './App.scss';
 import trending_thumbnail from './images/trending_thumbnail.jpg';
 
+// Components
 import SideNav from './Components/SideNav';
+import TopBar from './Components/TopBar';
+import Content from "./Components/Content";
+import SideInfo from './Components/SideInfo';
 
 // images
 import profile_pic from './images/profile_pic.png';
-import TopBar from './Components/TopBar';
-import Content from "./Components/Content";
+
 
 class App extends Component {
   render() {
@@ -38,7 +41,7 @@ class App extends Component {
           ]}
         />
 
-        <div className='main' style={{flex: '7', background: 'grey'}}>
+        <div className='main' style={{flex: '7'}}>
           <TopBar
             icons = {['fa-plus-circle', 'fa-bell', 'fa-user-circle']}
             active = {0}
@@ -92,26 +95,24 @@ class App extends Component {
               ]}
             />
 
-            <div className='side-info col-container'>
-              <div className='title'>
-                Trending
-                <span className='extra'>Show more</span>
-              </div>
-
-              <div className='trending-video'>
-                <img className='video' src={trending_thumbnail} alt='trending thumbnail'/>
-
-                <div className='creator-name'>Panagiotis Petridis</div>
-                <div className='video-title'>Render Layers in Blender</div>
-                <div className='video-description'>
-                  Hi there! So in this video I will be<br/>
-                  showing you guys how cool 
-                  render <br/>layers are and how you can use them.
-                </div>
-              </div>
-
-            </div>
-          
+            <SideInfo
+              title='Trending'
+              video={{
+                creator: 'Panagiotis Petridis',
+                title: 'Render Layers in Blender',
+                description: 'Hi there! So in this video I will be showing you guys how cool render layers are and how you can use them.',
+                thumbnail: trending_thumbnail
+              }}
+              channels={[
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
+                {photo: profile_pic, name: 'Channel Name', subscribers: '1M'}
+              ]}
+            />
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Content.scss';
+import './Video.scss';
 
 import Featured from './Featured';
 import VideoSection from './VideoSection';
 
 const Content = ({announcement, featured, feed}) => 
-<div className='content' style={{background: 'white'}}>
+<div className='content invisible-scroll'>
   <div className='col-container'>
 
     {/* Featured Videos / Announcement */}
@@ -18,7 +19,7 @@ const Content = ({announcement, featured, feed}) =>
     <div className='separator' style={{marginTop: '4vh', width: '130vh', alignSelf: 'center'}}></div>
     
     {/* Videos */}
-    <div style={{flex: 9, background: 'white'}}>
+    <div style={{flex: 9}}>
         {feed && feed.map(section => 
           <VideoSection
             title={section.title}

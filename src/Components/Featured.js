@@ -31,7 +31,7 @@ const VideoCarousel = ({videos}) =>
   </div>;
 
 const FeaturedVideo = ({thumbnail, creator, title, description, views, likes, date}) => 
-  <div className='col-container featured-video' style={{flex: 2, background: 'white'}}>
+  <div className='col-container featured-video' style={{flex: 2}}>
     <img className='thumbnail' src={thumbnail} alt='Title'/>
     <div className='col-container' style={{paddingTop: '1vh'}}>
       <div className='video-creator-name'>{creator}</div>
@@ -50,7 +50,7 @@ const Featured = ({announcement, carousel, video}) =>
     <div className='row-container'>
       <div className='col-container' style={{flex: 3}}>
 
-        <div style={{flex: 4, background: 'white'}}>
+        <div style={{flex: 4}}>
           <Announcement
             name={announcement.name}
             title={announcement.title}
@@ -58,7 +58,7 @@ const Featured = ({announcement, carousel, video}) =>
           />
         </div>
       
-        <div style={{flex: 3, background: 'white'}}>
+        <div style={{flex: 3}}>
           <VideoCarousel
             videos={carousel}
           />

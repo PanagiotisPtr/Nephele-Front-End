@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideNav.scss';
+import './Utilities.scss';
 
 // Images
 import logo from '../images/logo.png';

@@ -1,0 +1,12 @@
+.invisible-scroll::-webkit-scrollbar { width: 0 !important }
+
+.invisible-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-y: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.separator {
+    height: 0.1vh;
+    background: rgb(228, 228, 228);
+}

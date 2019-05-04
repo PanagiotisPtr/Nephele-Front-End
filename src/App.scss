@@ -16,60 +16,6 @@
     }
 }
 
-/*      ----  SIDE-INFO  ----      */
-
-.side-info {
-    height: 94vh;
-    flex: 1;
-    background: white;
-    border-left: 0.1vh solid rgb(228, 228, 228);
-}
-
-.side-info .title {
-    margin-top: 4vh;
-    margin-left: 4vh;
-    font-size: 2vh;
-    font-weight: 500;
-}
-
-.side-info .title .extra {
-    margin-top: 4vh;
-    margin-left: 2vh;
-    font-size: 1.5vh;
-    color: rgb(150, 150, 150);
-    cursor: pointer;
-}
-
-.side-info .trending-video .video {
-    position: relative;
-    width: 26.5vh;
-    margin-left: 4vh;
-    margin-top: 2vh;
-}
-
-.trending-video .creator-name {
-    font-size: 1.5vh;
-    font-weight: 500;
-    margin-left: 4vh;
-    margin-top: 1vh;
-    color: rgb(150, 150, 150);
-}
-
-.trending-video .video-title {
-    margin-left: 4vh;
-    margin-top: 2vh;
-    font-weight: 500;
-    font-size: 2vh;
-}
-
-.trending-video .video-description {
-    margin-left: 4vh;
-    margin-top: 0.5vh;
-    color: rgb(150, 150, 150);
-}
-
-/*      ----  APP  ----      */
-
 .app {
     @extend .row-container;
     height: 100vh;
