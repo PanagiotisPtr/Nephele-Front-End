@@ -38,8 +38,8 @@ const FeaturedVideo = ({thumbnail, creator, title, description, views, likes, da
       <div className='video-title' style={{paddingTop: '1vh'}}>{title}</div>
       <div className='video-description' style={{width: '25vw', paddingTop: '1vh'}}>{description}</div>
       <div className='row-container' style={{paddingTop: '1vh'}}>
-        <div className='video-stats' style={{paddingRight: '6vh'}}>{'VIEWS' + views}</div>
-        <div className='video-stats' style={{paddingRight: '6vh'}}>{'LIKES' + likes}</div>
+        <div className='video-stats' style={{paddingRight: '6vh'}}>{'VIEWS ' + views}</div>
+        <div className='video-stats' style={{paddingRight: '6vh'}}>{'LIKES ' + likes}</div>
         <div className='video-stats' style={{paddingRight: '6vh'}}>{date}</div>
       </div>
     </div>
