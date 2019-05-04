@@ -1,0 +1,60 @@
+.content {
+    flex: 4;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-y: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    height: 94vh;
+}
+
+.content::-webkit-scrollbar { width: 0 !important }
+
+.content .placeholder-text {
+    font-size: 12vh;
+    margin-top: 35vh;
+    margin-left: 50vh;
+}
+
+.video-creator-name {
+    font-size: 1.5vh;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.video-description {
+    font-size: 0.8vw;
+    color: rgb(150, 150, 150);
+}
+
+.video-stats {
+    font-weight: 500;
+    font-size: 1.2vh;
+    color: rgb(150, 150, 150);
+}
+
+.separator {
+    height: 0.1vh;
+    background: rgb(228, 228, 228);
+}
+
+/*      ----  CONTENT  ----      */
+
+.feed .thumbnail {
+    width: 15vw;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.category-title {
+    font-size: 2vh;
+    font-weight: bold;
+}
