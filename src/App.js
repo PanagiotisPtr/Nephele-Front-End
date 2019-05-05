@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import './App.scss';
-import trending_thumbnail from './images/trending_thumbnail.jpg';
+import example from './example.mp4';
 
 // Components
 import SideNav from './Components/SideNav';
 import TopBar from './Components/TopBar';
-import Content from "./Components/Content";
+import Content from './Components/Content';
 import SideInfo from './Components/SideInfo';
+import Watch from './Components/Watch';
 
 // images
 import profile_pic from './images/profile_pic.png';
+import trending_thumbnail from './images/trending_thumbnail.jpg';
 
 
 class App extends Component {
@@ -48,6 +50,7 @@ class App extends Component {
           />
           
           <div className='row-container'>
+            {/*
             <Content
               announcement = {{
                 name: 'Weekly Featured',
@@ -113,6 +116,10 @@ class App extends Component {
                 {photo: profile_pic, name: 'Channel Name', subscribers: '1M'}
               ]}
             />
+            */}
+          
+            <Watch video={example} poster={trending_thumbnail}/>
+
           </div>
         </div>
       </div>

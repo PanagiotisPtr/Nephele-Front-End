@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# example video
+/src/example.mp4
+
+# example poster
+/src/images/poster.jpg
+
 # dependencies
 /node_modules
 /.pnp

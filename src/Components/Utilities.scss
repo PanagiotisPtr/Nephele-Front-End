@@ -6,7 +6,16 @@
     overflow-y: -moz-scrollbars-none;
     -ms-overflow-style: none;
 }
+
 .separator {
     height: 0.1vh;
     background: rgb(228, 228, 228);
+}
+
+.no-select:focus {
+    outline: none !important;
+}
+
+.clickable {
+    cursor: pointer;
 }

@@ -1,0 +1,36 @@
+.likes-dislikes {
+    margin-left: auto;
+    flex-wrap: nowrap;
+}
+
+.likes-dislikes > * {
+    font-size: 1vw;
+    font-weight: 500;
+    padding-right: 0.5vw;
+}
+
+.stats-bar > * {
+    margin-right: 1vw;
+    font-size: 0.8vw;
+}
+
+.video-details > *{
+    margin-top: 0.8vw;
+}
+
+.subscribe-btn {
+    color: white;
+    font-size: 1vw;
+    padding: 0.5vw;
+    border-radius: 5%;
+    background: #2962ff;
+}
+
+.suggested-videos {
+    flex-wrap: wrap;
+}
+
+.suggested-videos > * {
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
