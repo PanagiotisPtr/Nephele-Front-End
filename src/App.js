@@ -50,7 +50,7 @@ class App extends Component {
           />
           
           <div className='row-container'>
-            {/*
+            
             <Content
               announcement = {{
                 name: 'Weekly Featured',
@@ -116,10 +116,43 @@ class App extends Component {
                 {photo: profile_pic, name: 'Channel Name', subscribers: '1M'}
               ]}
             />
+            {/*
+            <Watch
+              video={{
+                src: example,
+                info: {
+                  title: 'video title',
+                  description: 'Hi there! So in this video I will be showing you guys how cool render layers are and how you can use them.',
+                  date: '1WK AGO'
+                },
+                stats: {
+                  likes: '12K',
+                  dislikes: '2K',
+                  shared: '2K',
+                  views: '100K'
+                },
+                channel: {
+                  name: 'Channel',
+                  subscribers: '1.2M',
+                  photo: profile_pic
+                }
+              }}
+              poster={trending_thumbnail}
+              recommended={[
+                {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
+                {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
+                {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
+                {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
+                {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail}
+              ]}
+              comments = {[
+                {user: {name: 'Panagiotis', photo: profile_pic}, likes: '2K', dislikes: '100', content: 'Amazing video'},
+                {user: {name: 'Panagiotis', photo: profile_pic}, likes: '2K', dislikes: '100', content: 'Amazing video'},
+                {user: {name: 'Panagiotis', photo: profile_pic}, likes: '2K', dislikes: '100', content: 'Amazing video'},
+                {user: {name: 'Panagiotis', photo: profile_pic}, likes: '2K', dislikes: '100', content: 'Amazing video'}
+              ]}
+            />
             */}
-          
-            <Watch video={example} poster={trending_thumbnail}/>
-
           </div>
         </div>
       </div>
