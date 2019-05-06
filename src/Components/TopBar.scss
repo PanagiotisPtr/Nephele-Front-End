@@ -1,0 +1,63 @@
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    background: white;
+    height: 6vh;
+    border-bottom: 0.1vh solid rgb(228, 228, 228);
+}
+
+.top-bar .search-bar {
+    margin-left: auto;
+    
+    border-radius: 2vh;
+    border: 0.1vh solid rgb(212, 212, 212);
+}
+
+.top-bar .search-bar input[type=search] {
+    height: 4vh;
+    width: 20vw;
+    position: relative;
+
+    border-radius: 2vh;
+    border: none;
+    font-size: 1.8vh;
+    text-indent: 1vh;
+}
+
+.top-bar .search-bar input[type=search]:focus {
+    outline: none;
+}
+
+.top-bar .search-bar i {
+    color: rgb(150, 150, 150);
+    padding-right: 0.6vw;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+.top-bar .side-icons {
+    margin-left: auto;
+}
+
+.top-bar .side-icons > * {
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.top-bar .side-icons i {
+    font-size: 3vh;
+    color: rgb(150, 150, 150);
+}
+
+.top-bar .side-icons .active {
+    color: #2962ff;
+}

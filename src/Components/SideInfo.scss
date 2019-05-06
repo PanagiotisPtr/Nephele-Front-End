@@ -1,0 +1,30 @@
+.side-info {
+    flex: 1;
+    padding-left: 2vw;
+
+    height: 94vh;
+    border-left: 0.1vh solid rgb(228, 228, 228);
+}
+
+.side-info > * {
+    margin-top: 2vh;
+}
+
+.side-info .title {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.trending-video > * {
+    width: 15vw;
+    padding-top: 1vh;
+}
+
+.channel-list > * {
+    margin-bottom: 3vh;
+}
+
+.channel-photo {
+    border-radius: 100%;
+    height: 3vw;
+}

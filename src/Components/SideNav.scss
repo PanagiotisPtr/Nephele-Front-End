@@ -1,0 +1,108 @@
+.navbar {
+    height: 100%;
+    position: sticky;
+    width: 12.5vw;
+    background: rgb(248,248,248);
+}
+
+.navbar .logo {
+    margin-top: 5%;
+    align-self: center;
+}
+
+.navbar .logo{
+    height: 2vw;
+}
+
+.navbar .profile {
+    margin-top: 10%;
+}
+
+.navbar .profile img {
+    border-radius: 100%;
+    height: 3.2vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbar .profile .username {
+    margin-top: 5%;
+    font-size: 1vw;
+    align-self: center;
+}
+
+.navbar .profile .location {
+    margin-top: 2%;
+    color: rgb(150, 150, 150);
+    font-size: 0.8vw;
+    align-self: center;
+}
+
+.navbar .stats {
+    margin-top: 10%;
+}
+
+.navbar .stats .number {
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+.navbar .stats .name {
+    font-weight: 500;
+    font-size: 0.7vw;
+    color: rgb(150, 150, 150);
+}
+
+.navbar .separator {
+    max-height: 0.08vw;
+    align-self: center;
+    background: rgb(228, 228, 228);
+}
+
+.navbar .menu .option {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navbar .menu .option:hover {
+    background: rgb(225,225,225);
+}
+
+.navbar .menu .option .selected {
+    width: 0.4vw;
+    height: 2vw;
+    border-radius: 20%;
+    align-self: center;
+    background: #2962ff;
+}
+
+.navbar .menu .option i {
+    margin-left: 10%;
+    font-size: 1vw;
+    align-self: center;
+    color: rgb(150, 150, 150);
+}
+
+.navbar .menu .option .name {
+    padding-left: 5%;
+    font-size: 0.9vw;
+    align-self: center;
+}
+
+.navbar .menu .option .notification {
+    font-weight: bold;
+    font-size: 0.9vw;
+    margin-left: 0.5vw;
+    width: 100%;
+    padding-left: 5%;
+    color: #2962ff;
+    align-self: center;
+}
+
+.navbar .copyright {
+    color: rgb(150, 150, 150);
+    align-self: center;
+    font-size: 0.8vw;
+    margin-top: auto;
+    padding-bottom: 10%;
+}
