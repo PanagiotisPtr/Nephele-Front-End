@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './SideNav.scss';
 import './Utilities.scss';
 
@@ -46,7 +48,11 @@ const SideNav = props =>
   <aside className='navbar col-container'>
               
     {/* Nephele Logo */}
-    <img className='logo' src={logo} alt='Nephele Logo'/>
+    <div className='logo'>
+      <Link to='/'>
+        <img className='logo' src={logo} alt='Nephele Logo'/>
+      </Link>
+    </div>
 
     {/* User Infomation */}
     <UserStats

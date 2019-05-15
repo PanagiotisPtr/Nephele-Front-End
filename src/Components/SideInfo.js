@@ -1,13 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './SideInfo.scss';
 import './Video.scss';
 import './Utilities.scss';
 
-const Video = ({creator, title, description, thumbnail}) =>
+const Video = ({id, creator, title, description, thumbnail}) =>
   <div className='trending-video'>
-    <img className='video' src={thumbnail} alt='trending thumbnail'/>
+    <Link to={'/theater/' + id}>
+      <img className='image-link' src={thumbnail} alt='trending thumbnail'/>
+    </Link>
     <div className='video-creator-name'>{creator}</div>
+    <Link className='text-link' to={'/theater/' + id}>
     <div className='video-title'>{title}</div>
+    </Link>
     <div className='video-description'>{description}</div>
   </div>;
 
