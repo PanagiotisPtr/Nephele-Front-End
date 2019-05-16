@@ -11,7 +11,7 @@ const Video = ({id, title, creator, thumbnail, views, date}) =>
     </Link>
     <div className='video-creator-name'>{creator}</div>
     <Link className='text-link' to={'/theater/' + id}>
-    <div className='video-title' style={{paddingTop: '1vh', fontSize: '1vw'}}>{title}</div>
+    <div className='video-title' style={{paddingTop: '1vh', width: '15vw', fontSize: '1vw'}}>{title}</div>
     </Link>
     <div className='row-container' style={{paddingTop: '1.5vh'}}>
       <div className='video-stats item'>{'VIEWS ' + views}</div>

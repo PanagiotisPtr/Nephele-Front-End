@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Components
 import Content from './Components/Content';
@@ -8,13 +8,29 @@ import SideInfo from './Components/SideInfo';
 import profile_pic from './images/profile_pic.png';
 import trending_thumbnail from './images/trending_thumbnail.jpg';
 
-
 const creator_name = '5cd87f0e15afb10011b9f3c3';
 
+const latestVideos = async(num) => {
+  const response = await fetch('http://localhost:4000/videos/latest/' + num);
+  return await response.json();
+}
 
 const Home = _ => {
+  const [recent, setRecent] = useState();
+
+  useEffect(() => {
+    latestVideos(5).then(res => {
+      res.data.map(video => {
+        video.id = video._id;
+        video.thumbnail = require('./data/videos/' + video._id + '.jpg');
+      });
+      setRecent(res.data);
+    }).catch(err => console.log('Error:' + err));
+  }, []);
+
   return (
     <div className='row-container'>
+
       <Content
         announcement = {{
           name: 'Weekly Featured',
@@ -42,23 +58,11 @@ const Home = _ => {
         feed = {[
           {
             title: 'Recommended',
-            videos: [
-              {id: 'hgkj23h5vk3j2g5o2', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'hnlcv34ghj6kgc345', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'jbhfvkcd234tghk53', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: '983432llg6hj26lhj', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: '2g3f23g4j6f62gjkl', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail}
-            ]
+            videos: recent
           },
           {
             title: 'New',
-            videos: [
-              {id: '4123vjgk5d12l1212', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'nbvb3c26bnv345nb2', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'g95kh3hk8956gh546', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'mnbvmn45685m8nmbv', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
-              {id: 'nmb3n4v7nm434b573', title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail}
-            ]
+            videos: recent
           }
         ]}
       />

@@ -15,7 +15,7 @@ const Theater = props => {
   return (
     <Watch
       video={{
-        src: example,
+        src: require('./data/videos/' + props.match.params.id + '.mp4'),
         info: {
           title: 'video title',
           description: 'Hi there! So in this video I will be showing you guys how cool render layers are and how you can use them.',
@@ -33,7 +33,7 @@ const Theater = props => {
           photo: profile_pic
         }
       }}
-      poster={trending_thumbnail}
+      poster={require('./data/videos/' + props.match.params.id + '.jpg')}
       recommended={[
         {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
         {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
