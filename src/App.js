@@ -8,6 +8,7 @@ import TopBar from './Components/TopBar';
 import Home from './Home';
 import Theater from './Theater';
 
+
 // images
 import profile_pic from './images/profile_pic.png';
 
@@ -50,7 +51,7 @@ class App extends Component {
           <div className='row-container'>
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/theater/:id' component={Theater} />
+              <Route path='/theater/:id' exact component={Theater} />
             </Switch>
           </div>
         </div>

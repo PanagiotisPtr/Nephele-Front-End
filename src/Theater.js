@@ -7,15 +7,12 @@ import Watch from './Components/Watch';
 import profile_pic from './images/profile_pic.png';
 import trending_thumbnail from './images/trending_thumbnail.jpg';
 
-// example video
-import example from './example.mp4';
-
 const Theater = props => {
   console.log(props.match.params.id);
   return (
     <Watch
       video={{
-        src: require('./data/videos/' + props.match.params.id + '.mp4'),
+        src: 'http://localhost:5000/videos/' + props.match.params.id,
         info: {
           title: 'video title',
           description: 'Hi there! So in this video I will be showing you guys how cool render layers are and how you can use them.',
@@ -33,7 +30,7 @@ const Theater = props => {
           photo: profile_pic
         }
       }}
-      poster={require('./data/videos/' + props.match.params.id + '.jpg')}
+      poster={'http://localhost:5000/thumbnails/' + props.match.params.id}
       recommended={[
         {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},
         {title: 'Incredible Title',creator: 'Creator', views: '100K', date: '1WEEK AGO', thumbnail: trending_thumbnail},

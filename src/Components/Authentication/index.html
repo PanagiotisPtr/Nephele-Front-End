@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' /> 
+  <meta name='viewport' content='width=device-width'>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Mandali|Montserrat|Ramabhadra|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href='styles.css'>
+
+  <script src='login.js'></script>
+</head>
+<body>
+  <main class='col-container centered-col-container' style='height: 100%;'>
+    <div class='row-container centered-col-container'>
+
+    <!-- Spinner
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div> -->
+      <div class='card col-container'>
+      <div id='title' class='title center'>Welcome!</div>
+      
+      <div id='username-field' class='text-input' style='display: none;transition: all 0.5s ease;'>
+        <div class='col-container'>
+          <div class='input-label'>Username</div>
+          <input type='password'>
+        </div>
+      </div>
+      
+      <div id='email-field' class='text-input' style='margin-top: 5vh;'>
+        <div class='col-container'>
+          <div class='input-label'>Email</div>
+          <input type='email'>
+        </div>
+      </div>
+
+      <div class='text-input' style='margin-top: 5vh;'>
+        <div class='col-container'>
+          <div class='input-label'>Password</div>
+          <input type='password'>
+        </div>
+      </div>
+
+      <div id='verify-password' class='text-input' style='margin-top: 5vh; display: none;opacity: 0; transition: all 0.5s ease;'>
+        <div class='col-container'>
+          <div class='input-label'>Verify Password</div>
+          <input type='password'>
+        </div>
+      </div>
+
+      <div id='forgot-password' class='text-input' style='margin-top: 1vh; transition: all 0.5s ease;'>
+        <div class='col-container'>
+            <b class='clickable'>Forgot password?</b>
+        </div>
+      </div>
+      
+      <div class='btn-stack'>
+        <div onclick='toggleSignup()' class='clickable col-container btn-snd big-btn'>
+          <div class='row-container' style='justify-content: center;'>
+            <div>Sign Up</div>
+          </div>
+        </div>
+
+        <div class='clickable col-container btn-main big-btn'>
+          <div class='row-container' style='justify-content: center;'>
+            <div>Log In</div>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.card {
+  border-radius: 3vh;
+  width: 25vw;
+  height: 70vh;
+  background: white;
+  
+  border: 0.3vh solid black;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  /*box-shadow: 0 0 1em 0.2em  rgba(0, 0, 0, 0.2);*/
+}
+
+.btn-stack {
+  transition: all 0.5s ease;
+  margin-top: auto;
+  margin-bottom: 4vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-stack > * {
+  margin: auto;
+}
+
+.centered-col-container {
+  justify-content: center;
+}
+
+.card .text-input {
+  transition: all 0.5s ease;
+  width: 80%;
+  margin-top: 5vh;
+  align-self: center;
+}
+
+.card .text-input input:focus {
+  outline: none;
+}
+
+.card .text-input input:invalid {
+  border-color: rgb(252, 53, 53);
+  box-shadow: none;
+}
+
+.card .text-input input {
+  font-size: 150%;
+  border: none;
+  border-bottom: 0.2vh solid black;
+}
+
+.card .logo {
+  font-size: 200%;
+}
+
+.card .title {
+  transition: all 0.5s ease;
+  margin-top: 4vh;
+  margin-bottom: 10vh;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.card .center {
+  align-self: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.btn-main {
+  justify-content: center;
+  font-size: 150%;
+  border-radius: 5vw;
+  background: black;
+  color: white;
+  border: 0.3vh solid black;
+}
+
+.btn-snd {
+  justify-content: center;
+  font-size: 150%;
+  border-radius: 5vw;
+  background: white;
+  color: block;
+  border: 0.3vh solid black;
+}
+
+.big-btn {
+  width: 7.5vw;
+  height: 7vh;
+}

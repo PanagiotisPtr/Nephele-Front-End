@@ -8,7 +8,7 @@ import SideInfo from './Components/SideInfo';
 import profile_pic from './images/profile_pic.png';
 import trending_thumbnail from './images/trending_thumbnail.jpg';
 
-const creator_name = '5cd87f0e15afb10011b9f3c3';
+const creator_name = '5ce9594c774c2500117de809';
 
 const latestVideos = async(num) => {
   const response = await fetch('http://localhost:4000/videos/latest/' + num);
@@ -22,7 +22,7 @@ const Home = _ => {
     latestVideos(5).then(res => {
       res.data.map(video => {
         video.id = video._id;
-        video.thumbnail = require('./data/videos/' + video._id + '.jpg');
+        video.thumbnail = 'http://localhost:5000/thumbnails/' + video._id;
       });
       setRecent(res.data);
     }).catch(err => console.log('Error:' + err));
@@ -34,7 +34,7 @@ const Home = _ => {
       <Content
         announcement = {{
           name: 'Weekly Featured',
-          title: 'Summer is here!',
+          title: 'Summer is here!!!',
           description: 'Spring is over, summer is here! Kick back, relax and watch your favorite creators!'
         }}
         featured = {{
@@ -77,14 +77,13 @@ const Home = _ => {
           thumbnail: trending_thumbnail
         }}
         channels={[
-          // for production require('./data/creators/' + creator_name + '.jpg')
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'},
-          {photo: profile_pic, name: 'Channel Name', subscribers: '1M'}
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'},
+          {photo: 'http://localhost:5000/creators/' + creator_name, name: 'Channel Name', subscribers: '1M'}
         ]}
       />
     </div>
